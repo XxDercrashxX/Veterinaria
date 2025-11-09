@@ -134,15 +134,16 @@ input:focus {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
+    margin-right: 3rem;
 }
 
 .nav-links a:hover {
@@ -177,7 +178,7 @@ input:focus {
 .sidebar-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #9ef01a;
+    color: #5ea535;
     margin-top: 1rem;
     margin-bottom: 2rem;
     transform: rotate(-10deg);
@@ -194,19 +195,20 @@ input:focus {
 }
 
 .main-content h1 {
-    font-size: 2.2rem;
-    color: #005f73;
+    font-size: 1.8rem;
+    color: #5ea535;
     margin-top: 0;
 }
 
 .main-content h2 {
-    font-size: 1.8rem;
-    color: #005f73;
+    font-size: 1.4rem;
+    color: #5ea535;
     margin-top: 2rem;
 }
 
 .main-content p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.6;
     color: #333;
+    font-weight: normal;
 }
