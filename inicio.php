@@ -24,10 +24,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             </a>
 
             <ul class="nav-links">
-                <li><a href="inicio.php" class="link-active">INICIO</a></li>
-                <li><a href="pacientes.php">PACIENTE</a></li>
-                <li><a href="duenos.php">DUEÑOS</a></li>
-                <li><a href="citas.php">CITAS</a></li>
+                <li><a href="Inicio.php" class="link-active">INICIO</a></li>
+                <li><a href="Pacientes.php">PACIENTE</a></li>
+                <li><a href="Dueños.php">DUEÑOS</a></li>
+                <li><a href="Citas.php">CITAS</a></li>
             </ul>
 
             <div class="nav-profile">
