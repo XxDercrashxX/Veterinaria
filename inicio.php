@@ -1,0 +1,80 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: index.html");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - VETEICA CLINIC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="inicio.php" class="nav-logo">
+                <img src="https://placehold.co/150x40/005f73/white?text=VETEICA" alt="Veteica Clinic Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="inicio.php" class="link-active">INICIO</a></li>
+                <li><a href="pacientes.php">PACIENTE</a></li>
+                <li><a href="duenos.php">DUEÑOS</a></li>
+                <li><a href="citas.php">CITAS</a></li>
+            </ul>
+
+            <div class="nav-profile">
+                <span>N</span> 
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-wrapper">
+            
+            <aside class="sidebar">
+                <h2 class="sidebar-title">¿QUIÉNES SOMOS?</h2>
+                <img src="https://placehold.co/400x450/e0e0e0/777?text=Perro+Feliz" alt="Perro Border Collie sonriendo" class="sidebar-image">
+            </aside>
+
+            <section class="main-content">
+                <h1>Conoce Veterinaria VETICA CLINIC</h1>
+                <p>
+                    En VETICA CLINIC, nos dedicamos a brindar medicina veterinaria de
+                    alta calidad con un enfoque ético, compasivo y científico. Desde
+                    nuestro inicio, en 16 de octubre de 2025 nos hemos consolidado
+                    como un espacio donde las mascotas reciben atención integral, y
+                    sus familias encuentran asesoramiento confiable y personalizado.
+                </p>
+
+                <h2>Acerca de Nosotros</h2>
+                <p>
+                    En el corazón de nuestra pasión por los animales, te damos la más
+                    cordial bienvenida a las páginas de nuestra revista de veterinaria.
+                    Somos un equipo comprometido y apasionado de profesionales de la
+                    salud animal, dedicados a promover el bienestar, la salud y la
+                    felicidad de nuestros amigos.
+                </p>
+                <p>
+                    Nuestra Misión: En "Nuestra Pasión por los Animales", nuestra misión
+                    es clara: proporcionar un recurso confiable y enriquecedor para
+                    propietarios de mascotas, amantes de los animales y profesionales
+                    del mundo veterinario por igual. A través de contenido informativo,
+                    inspirador y educativo, nos esforzamos por compartir los últimos
+                    avances médicos, consejos de cuidado y anécdotas conmovedoras
+                    que reflejan el profundo vínculo entre humanos y animales.
+                </p>
+            </section>
+
+        </div>
+    </main>
+    
+</body>
+</html>
