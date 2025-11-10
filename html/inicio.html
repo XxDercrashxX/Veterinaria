@@ -15,14 +15,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - VETEICA CLINIC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="/css/styles.css"> 
 </head>
 <body>
 
     <header class="main-header">
         <nav class="main-nav">
-            <a href="inicio.php" class="nav-logo">
-                <img src="https://placehold.co/150x40/005f73/white?text=VETEICA" alt="Veteica Clinic Logo">
+                <img src="/img/logoVetica.png" alt="Veteica Clinic Logo">
             </a>
 
             <ul class="nav-links">
@@ -35,6 +34,33 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <div class="nav-profile">
                 <span>N</span> 
             </div>
+
+            <div class="profile">
+                <h3>Perfil del administrador</h3>
+                
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <span>N</span>
+                    </div>
+                    <strong>ejemplo</strong>
+                    <p>ejemplo@gmail.com</p>
+                </div>
+
+                <div class="profile-body">
+                    <label>Credencial:</label>
+                    <div class="info-box">9494165149840401</div>
+
+                    <label>Certificado:</label>
+                    <div class="info-box">Veteterinario</div>
+
+                    <label>Telefono:</label>
+                    <div class="info-box">612 111 1111</div>
+                </div>
+
+                <div class="profile-footer">
+                    <a href="/html/index.html">Cerrar sesión</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -43,7 +69,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             
             <aside class="sidebar">
                 <h2 class="sidebar-title">¿QUIÉNES SOMOS?</h2>
-                <img src="https://placehold.co/400x450/e0e0e0/777?text=Perro+Feliz" alt="Perro Border Collie sonriendo" class="sidebar-image">
+                <img src="/img/perroInicio.png" alt="Perro Border Collie sonriendo" class="sidebar-image">
             </aside>
 
             <section class="main-content">
@@ -77,6 +103,22 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
         </div>
     </main>
+
+    <script>
+        const profileIcon = document.querySelector('.nav-profile');
+        const profileCard = document.querySelector('.profile');
+
+        profileIcon.addEventListener('click', (e) => {
+            e.stopPropagation(); 
+            profileCard.classList.toggle('active');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (!profileCard.contains(e.target)) {
+                profileCard.classList.remove('active');
+            }
+        });
+    </script>
     
 </body>
 </html>

@@ -17,6 +17,98 @@ body {
     background-color: #ffffff;
 }
 
+.profile {
+    position: absolute;   
+    top: 90px;            
+    right: 5%;            
+    display: none;        
+    width: 320px;
+    background-color: #2a3e47; 
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 1000; 
+}
+
+.profile.active {
+    display: block; 
+}
+
+.profile h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-bottom: 1px solid #4a5c67;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #4a5c67;
+}
+
+.profile-avatar {
+    background-color: #1a1a1a;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 0.5rem auto;
+}
+
+.profile-header strong {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.profile-header p {
+    font-size: 0.9rem !important; 
+    color: #c0c0c0 !important; 
+    font-weight: normal !important;
+}
+
+.profile-body {
+    padding: 1rem;
+}
+
+.profile-body label {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.info-box {
+    background-color: #4f5d67;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    color: white;
+}
+
+.profile-footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #4a5c67;
+}
+
+.profile-footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.profile-footer a:hover {
+    text-decoration: underline;
+}
+
 .register-container {
     padding: 2.5rem;
     border-radius: 15px;
@@ -125,7 +217,7 @@ input:focus {
 }
 
 .nav-logo img {
-    height: 40px;
+    height: 100px;
     display: block;
 }
 
