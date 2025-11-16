@@ -12,16 +12,19 @@ body {
 
 .page-center {
     display: grid;
-    place-items: center;
+    grid-template-rows: auto auto;
+    align-content: center;  
+    justify-items: center; 
+    gap: 2.5rem;
     min-height: 100vh;
     background-color: #ffffff;
 }
 
 .profile {
-    position: absolute;   
-    top: 90px;            
-    right: 5%;            
-    display: none;        
+    position: absolute; 
+    top: 90px; 
+    right: 5%;
+    display: none; 
     width: 320px;
     background-color: #2a3e47; 
     color: white;
@@ -141,7 +144,7 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
+width: 100%;
     padding: 1rem;
     padding-right: 3rem;
     border: none;
@@ -303,4 +306,153 @@ input:focus {
     line-height: 1.6;
     color: #333;
     font-weight: normal;
+}
+
+.login-logo-container {
+    text-align: center; 
+}
+
+.login-logo-container img {
+    width: 200px; 
+    height: auto;
+}
+
+.patient-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.patient-panel h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.patient-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-create {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+    background-color: #e0e0e0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+}
+
+.search-bar i {
+    color: #6c757d;
+    margin-right: 0.5rem;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.search-bar input::placeholder {
+    color: #6c757d;
+}
+
+.table-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table-container h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+table.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.patient-table th,
+table.patient-table td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.patient-table th {
+    background-color: #2a3e47;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+table.patient-table td {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+table.patient-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.btn-action {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-right: 0.25rem;
+    color: white;
+}
+
+.btn-details {
+    background-color: #6c757d;
+}
+
+.btn-edit {
+    background-color: #489a9d;
+}
+
+.btn-delete {
+    background-color: #b94a48;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #888;
+    font-size: 0.9rem;
 }

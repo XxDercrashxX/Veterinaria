@@ -1,34 +1,24 @@
-<?php
-/*
-session_start();
-
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header("Location: index.html");
-    exit;
-}
-    */
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - VETEICA CLINIC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/styles.css"> 
 </head>
 <body>
 
     <header class="main-header">
         <nav class="main-nav">
-                <img src="/img/logoVetica.png" alt="Veteica Clinic Logo">
+                <img src="../public/css/img/logoVetica.png"Veteica Clinic Logo">
             </a>
 
             <ul class="nav-links">
-                <li><a href="Inicio.php" class="link-active">INICIO</a></li>
-                <li><a href="Pacientes.php">PACIENTE</a></li>
-                <li><a href="Dueños.php">DUEÑOS</a></li>
-                <li><a href="Citas.php">CITAS</a></li>
+                <li><a href="Inicio.html" class="link-active">INICIO</a></li>   
+                <li><a href="Paciente.html">PACIENTE</a></li>
+                <li><a href="Dueños.html">DUEÑOS</a></li>
+                <li><a href="Citas.html">CITAS</a></li>
             </ul>
 
             <div class="nav-profile">
@@ -58,7 +48,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 </div>
 
                 <div class="profile-footer">
-                    <a href="/html/index.html">Cerrar sesión</a>
+                    <a href="index.html">Cerrar sesión</a>
                 </div>
             </div>
         </nav>
@@ -69,7 +59,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             
             <aside class="sidebar">
                 <h2 class="sidebar-title">¿QUIÉNES SOMOS?</h2>
-                <img src="/img/perroInicio.png" alt="Perro Border Collie sonriendo" class="sidebar-image">
+                <img src="../public/css/img/perroInicio.png" alt="Perro Border Collie sonriendo" class="sidebar-image">
             </aside>
 
             <section class="main-content">
