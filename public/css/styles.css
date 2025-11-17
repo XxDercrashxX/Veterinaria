@@ -319,13 +319,11 @@ input:focus {
 
 .patient-panel {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 8px;
-    text-align: center;
     
 }
 
@@ -333,6 +331,7 @@ input:focus {
     margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
+    flex-grow: 1;
     text-align: center;
 }
 
