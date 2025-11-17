@@ -325,12 +325,15 @@ input:focus {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-align: center;
+    
 }
 
 .patient-panel h2 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .patient-actions {
@@ -397,6 +400,7 @@ input:focus {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 table.patient-table {
@@ -455,4 +459,43 @@ table.patient-table tbody tr:nth-child(even) {
     margin-top: 2rem;
     color: #888;
     font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+
+    .patient-panel {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .patient-panel h2 {
+        text-align: center;
+    }
+
+    .patient-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        justify-content: center;
+    }
+
+    .table-container {
+        overflow-x: auto; 
+    }
+
+    table.patient-table {
+        min-width: 700px; 
+    }
+
+    table.patient-table td:last-child {
+        white-space: nowrap; 
+    }
+
+    .profile {
+        right: 10px;
+        width: 300px;
+    }
 }
